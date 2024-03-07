@@ -1,16 +1,22 @@
 : 1
 name: sparrow-tests
+project: sparrow
 version: 0.0.1
 language: c++
-project: sparrow
-summary: sparrow-tests C++ executable
-license: other: proprietary ; Not free/open source.
+summary: Tests for the sparrow library
+license: other: Apache-2.0
 description-file: README.md
-url: https://example.org/sparrow
-email: 142265+Klaim@users.noreply.github.com
-#build-error-email: 142265+Klaim@users.noreply.github.com
+src-url: https://github.com/xtensor-stack/sparrow/
+package-url: https://github.com/Klaim/build2-sparrow/
+package-email: joel.lamotte@quantstack.net
+#build-error-email: joel.lamotte@quantstack.net
 depends: * build2 >= 0.16.0
 depends: * bpkg >= 0.16.0
-#depends: libhello ^1.0.0
 
-depends: doctest
+requires: c++20
+
+depends: doctest ^2.0.0
+
+
+builds: default
+

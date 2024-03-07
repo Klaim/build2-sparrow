@@ -1,14 +1,21 @@
 : 1
 name: sparrow
+project: sparrow
 version: 0.0.1
 type: lib,binless
 language: c++
-summary: sparrow C++ library
-license: other: proprietary ; Not free/open source.
+summary: C++ library for interfacing with Apache Arrow data
+license: other: Apache-2.0
 description-file: README.md
-url: https://example.org/sparrow
-email: 142265+Klaim@users.noreply.github.com
-#build-error-email: 142265+Klaim@users.noreply.github.com
+topics: arrow,dataframe
+tests: sparrow-tests
+src-url: https://github.com/xtensor-stack/sparrow/
+package-url: https://github.com/Klaim/build2-sparrow/
+package-email: joel.lamotte@quantstack.net
+#build-error-email: joel.lamotte@quantstack.net
 depends: * build2 >= 0.16.0
 depends: * bpkg >= 0.16.0
-#depends: libhello ^1.0.0
+
+requires: c++20
+
+builds: default
