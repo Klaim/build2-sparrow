@@ -17,3 +17,8 @@
 # Use `binary` to make sure certain files are never auto-detected as text.
 #
 #*.png binary
+
+
+sparrow/include symlink=dir
+sparrow-tests/tests/sources symlink=dir
+

@@ -1,5 +1,5 @@
 libs =
-#import libs += libhello%lib{hello}
+import libs += sparrow%lib{sparrow} doctest%lib{doctest}
 
 exe{sparrow-tests}: {hxx ixx txx cxx}{**} $libs testscript
 

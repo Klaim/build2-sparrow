@@ -1,6 +1,6 @@
 $out_root/
 {
-  include include/sparrow/
+  include include/
 }
 
-export $out_root/include/sparrow/$import.target
+export $out_root/include/$import.target
