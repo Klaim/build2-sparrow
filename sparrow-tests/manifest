@@ -1,6 +1,6 @@
 : 1
 name: sparrow-tests
-version: 0.1.0-a.0.z
+version: 0.0.1
 language: c++
 project: sparrow
 summary: sparrow-tests C++ executable
