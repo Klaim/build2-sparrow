@@ -5,15 +5,14 @@ lib{sparrow}: {hxx ixx txx}{** -version} hxx{version} $intf_libs
 
 hxx{version}: in{version} $src_root/manifest
 
-# Build options.
-#
-cxx.poptions =+ "-I$out_root" "-I$src_root"
-
 # Export options.
 #
+out_pfx = [dir_path] $out_root/include/
+src_pfx = [dir_path] $src_root/include/
+
 lib{sparrow}:
 {
-  cxx.export.poptions = "-I$out_root" "-I$src_root"
+  cxx.export.poptions = "-I$out_pfx" "-I$src_pfx"
   cxx.export.libs = $intf_libs
 }
 
