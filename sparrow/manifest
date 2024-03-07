@@ -4,7 +4,7 @@ project: sparrow
 version: 0.0.1
 type: lib,binless
 language: c++
-summary: C++ library for interfacing with Apache Arrow data
+summary: C++20 idiomatic APIs for the Apache Arrow Columnar Format
 license: other: Apache-2.0
 description-file: README.md
 topics: arrow,dataframe
