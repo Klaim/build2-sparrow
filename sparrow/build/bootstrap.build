@@ -1,0 +1,7 @@
+project = sparrow
+
+using version
+using config
+using test
+using install
+using dist
