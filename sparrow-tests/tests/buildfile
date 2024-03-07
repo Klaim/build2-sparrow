@@ -1,6 +1,6 @@
 libs =
 import libs += sparrow%lib{sparrow} doctest%lib{doctest}
 
-exe{sparrow-tests}: {hxx ixx txx cxx}{**} $libs testscript
+exe{sparrow-tests}: {hxx ixx txx cxx}{**} $libs
 
 cxx.poptions =+ "-I$out_root" "-I$src_root"
