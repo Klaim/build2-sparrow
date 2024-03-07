@@ -19,6 +19,6 @@
 #*.png binary
 
 
-sparrow/include symlink=dir
+sparrow/include/sparrow symlink=dir
 sparrow-tests/tests/sources symlink=dir
 
