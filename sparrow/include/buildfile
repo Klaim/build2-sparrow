@@ -19,6 +19,6 @@ lib{sparrow}:
 #
 {hxx ixx txx}{*}:
 {
-  install         = include/sparrow/
+  install         = include/
   install.subdirs = true
 }
