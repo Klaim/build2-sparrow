@@ -18,5 +18,7 @@ depends: * bpkg >= 0.16.0
 
 requires: c++20
 
+builds: latest experimental
+
 depends: date ^3.0.0 ? ($config.sparrow.use_date_polyfill)
 
