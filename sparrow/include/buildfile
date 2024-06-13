@@ -3,7 +3,7 @@ intf_libs = # Interface dependencies.
 
 if($config.sparrow.use_date_polyfill)
 {
-  import intf_libs += date%lib{date}
+  import intf_libs += date%lib{date date-tz}
 }
 
 
@@ -26,6 +26,14 @@ if($config.sparrow.use_date_polyfill)
   {
     cxx.export.poptions += -DSPARROW_USE_DATE_POLYFILL
   }
+}
+
+# metadata (provided to users)
+lib{sparrow}:
+{
+  export.metadata = 1 sparrow
+
+  sparrow.use_date_polyfill = [bool] $config.sparrow.use_date_polyfill
 }
 
 # Install into the sparrow/ subdirectory of, say, /usr/include/
