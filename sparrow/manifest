@@ -18,4 +18,5 @@ depends: * bpkg >= 0.16.0
 
 requires: c++20
 
-builds: default
+builds: latest experimental
+

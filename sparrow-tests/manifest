@@ -14,9 +14,10 @@ depends: * build2 >= 0.16.0
 depends: * bpkg >= 0.16.0
 
 requires: c++20
+builds: latest experimental
 
 depends: doctest ^2.0.0
 
 
-builds: default
+
 
