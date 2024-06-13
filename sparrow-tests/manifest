@@ -1,7 +1,7 @@
 : 1
 name: sparrow-tests
 project: sparrow
-version: 0.0.2-a.0.z
+version: 0.0.2
 language: c++
 summary: Tests for the sparrow library (C++20 idiomatic APIs for the Apache Arrow Columnar Format)
 license: other: Apache-2.0

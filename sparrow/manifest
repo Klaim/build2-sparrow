@@ -1,7 +1,7 @@
 : 1
 name: sparrow
 project: sparrow
-version: 0.0.2-a.0.z
+version: 0.0.2
 type: lib,binless
 language: c++
 summary: C++20 idiomatic APIs for the Apache Arrow Columnar Format
