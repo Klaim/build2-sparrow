@@ -1,6 +1,12 @@
 intf_libs = # Interface dependencies.
 #import xxxx_libs += libhello%lib{hello}
 
+if($config.sparrow.use_date_polyfill)
+{
+  import intf_libs += date%lib{date}
+}
+
+
 lib{sparrow}: {hxx ixx txx}{**} $intf_libs
 
 # Export options.
@@ -10,8 +16,16 @@ src_pfx = [dir_path] $src_root/include/
 
 lib{sparrow}:
 {
-  cxx.export.poptions = "-I$out_pfx" "-I$src_pfx"
-  cxx.export.libs = $intf_libs
+  cxx.export.poptions += "-I$out_pfx" "-I$src_pfx"
+  cxx.export.libs += $intf_libs
+}
+
+if($config.sparrow.use_date_polyfill)
+{
+  lib{sparrow}:
+  {
+    cxx.export.poptions += -DSPARROW_USE_DATE_POLYFILL
+  }
 }
 
 # Install into the sparrow/ subdirectory of, say, /usr/include/

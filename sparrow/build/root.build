@@ -14,3 +14,8 @@ cxx{*}: extension = cpp
 # The test target for cross-testing (running tests under Wine, etc).
 #
 test.target = $cxx.target
+
+########
+# Options
+
+config [bool] config.sparrow.use_date_polyfill ?= false
