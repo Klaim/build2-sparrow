@@ -23,5 +23,4 @@ depends: date ^3.0.0 ? ($config.sparrow.use_date_polyfill)
 
 builds: latest experimental wasm : &( +gcc-12+ +clang-18+ +msvc-17.10+ +emcc-3.1+ )
 
-# latest-build-config: **_libc++** : config.sparrow.use_date_polyfill=true
 

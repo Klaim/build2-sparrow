@@ -18,4 +18,8 @@ test.target = $cxx.target
 ########
 # Options
 
-config [bool] config.sparrow.use_date_polyfill ?= false
+# Controls if we will use the `date` library instead of the standard library
+# for timestamps implementations supporting date and timezone.
+# Default is `false` except if we use `libc++` as it does not provid any
+# timezone implementation yet.
+config [bool] config.sparrow.use_date_polyfill ?= ($cxx.stdlib == 'libc++')
