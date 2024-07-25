@@ -1,6 +1,6 @@
-#include <sparrow/sparrow_version.hpp>
-#include <sparrow/iterator.hpp>
-#include <sparrow/buffer.hpp>
+#include <sparrow/config/sparrow_version.hpp>
+#include <sparrow/utils/iterator.hpp>
+#include <sparrow/buffer/buffer.hpp>
 
 int main ()
 {
